@@ -5,7 +5,7 @@
 import sys
 from cpu import *
 
-cpu = CPU()
+if sys.argv[2]:
+    cpu = CPU(sys.argv[2])
 
-cpu.load()
-cpu.run()
+
